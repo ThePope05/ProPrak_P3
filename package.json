@@ -1,0 +1,20 @@
+{
+  "name": "proprak_p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThePope05/ProPrak_P3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThePope05/ProPrak_P3/issues"
+  },
+  "homepage": "https://github.com/ThePope05/ProPrak_P3#readme"
+}
