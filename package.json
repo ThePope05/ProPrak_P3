@@ -11,13 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/ThePope05/ProPrak_P3.git"
   },
-  "author": "",
+  "author": "SimonWobben",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ThePope05/ProPrak_P3/issues"
   },
   "homepage": "https://github.com/ThePope05/ProPrak_P3#readme",
   "devDependencies": {
-    "sass": "^1.56.2"
+    "sass": "^1.58.0"
   }
 }
