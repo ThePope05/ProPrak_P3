@@ -2,4 +2,48 @@ html {
   font-size: 18px;
 }
 
+body {
+  background-color: #4a4a4a;
+  padding: 0;
+  margin: 0;
+}
+body .banner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body .banner > .img {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+body .banner > .img img {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+body .banner > .img img:first-of-type {
+  z-index: -10;
+}
+body .banner > .img img:last-of-type {
+  z-index: -9;
+}
+body .banner > .titels {
+  text-align: center;
+  width: 50%;
+}
+body .banner > .titels h1 {
+  width: 100%;
+  font-size: 3rem;
+}
+body .banner > .titels hr {
+  width: 75%;
+  margin: 0 auto;
+}
+body .banner > .titels h3 {
+  width: 100%;
+  font-size: 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */
