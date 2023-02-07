@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ThePope05/ProPrak_P3/issues"
   },
-  "homepage": "https://github.com/ThePope05/ProPrak_P3#readme"
+  "homepage": "https://github.com/ThePope05/ProPrak_P3#readme",
+  "devDependencies": {
+    "sass": "^1.56.2"
+  }
 }
