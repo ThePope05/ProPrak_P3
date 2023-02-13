@@ -6,6 +6,8 @@ body {
   background-color: #4a4a4a;
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 body .banner {
   width: 100%;
@@ -44,6 +46,23 @@ body .banner > .titels hr {
 body .banner > .titels h3 {
   width: 100%;
   font-size: 2rem;
+}
+body .banner > nav {
+  width: 50%;
+  bottom: 0;
+  left: 0;
+}
+body .banner > nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+body .banner > nav ul > li {
+  background-color: white;
+  border-radius: 2rem;
+}
+body .banner > nav ul > li span {
+  font-size: 10rem !important;
 }
 
 /*# sourceMappingURL=style.css.map */
