@@ -2,67 +2,138 @@ html {
   font-size: 18px;
 }
 
+@font-face {
+  font-family: "DyslexicFont";
+  src: url("../resources/fonts/OpenDyslexic/OpenDyslexic-Regular.otf");
+}
 body {
+  font-family: "DyslexicFont";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: #4a4a4a;
+  overflow: hidden;
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
 }
-body .banner {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-body .banner > .img {
+body > .img {
   top: 0;
   left: 0;
   position: absolute;
   width: 100%;
 }
-body .banner > .img img {
-  position: relative;
+body > .img img {
+  position: absolute;
   width: 100%;
+  height: 100vh;
   object-fit: cover;
 }
-body .banner > .img img:first-of-type {
+body > .img img:first-of-type {
   z-index: -10;
 }
-body .banner > .img img:last-of-type {
+body > .img img:last-of-type {
   z-index: -9;
+}
+body .banner {
+  width: 40%;
+  height: 100%;
+  position: relative;
 }
 body .banner > .titels {
   text-align: center;
-  width: 50%;
+  width: 100%;
+  margin: 1rem 0rem;
+  padding: 0;
 }
 body .banner > .titels h1 {
   width: 100%;
-  font-size: 3rem;
+  font-size: 5rem;
+  margin: 0;
 }
 body .banner > .titels hr {
-  width: 75%;
+  width: 60%;
+  height: 0.3rem;
+  background-color: #000;
+  border-radius: 0.1rem;
+  border-style: none;
+  border-width: 0;
   margin: 0 auto;
 }
 body .banner > .titels h3 {
-  width: 100%;
-  font-size: 2rem;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 3rem;
 }
-body .banner > nav {
+body > aside {
   width: 50%;
-  bottom: 0;
+  height: 90%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body > aside > p {
+  background-color: #d9d9d9;
+  box-shadow: 0.5rem 0.5rem 0 #56696d;
+  font-size: 2rem;
+  border-radius: 0.7rem;
+  border-style: none;
+  border-width: 0rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  width: calc(100% - 1rem);
+}
+body > aside > button {
+  background-color: #d9d9d9;
+  box-shadow: 0.5rem 0.5rem 0 #56696d;
+  font-family: "DyslexicFont";
+  border-radius: 0.7rem;
+  border-style: none;
+  border-width: 0rem;
+  margin: 1rem 0;
+  width: 100%;
+  height: 6rem;
+  font-size: 4.8rem;
+  line-height: 1em;
+}
+body > aside > button:hover {
+  background-color: #d9d9d9;
+  box-shadow: 0.65rem 0.65rem 0 #56696d;
+  color: rgb(62, 62, 62);
+}
+body > nav {
+  position: absolute;
+  z-index: 10;
+  width: 50%;
+  bottom: 1rem;
   left: 0;
 }
-body .banner > nav ul {
+body > nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
 }
-body .banner > nav ul > li {
-  background-color: white;
-  border-radius: 2rem;
+body > nav ul > li {
+  margin: 0 0.5rem;
+  background-color: #d9d9d9;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0 #678085;
 }
-body .banner > nav ul > li span {
+body > nav ul > li a {
+  text-decoration: none;
+  color: black;
+}
+body > nav ul > li span {
   font-size: 10rem !important;
+}
+body > nav ul > li:hover {
+  background-color: #d9d9d9;
+  box-shadow: 0.65rem 0.65rem 0 #56696d;
+}
+body > nav ul > li:hover a {
+  color: rgb(62, 62, 62);
 }
 
 /*# sourceMappingURL=style.css.map */
