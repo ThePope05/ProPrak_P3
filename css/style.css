@@ -82,6 +82,44 @@ body .banner > nav ul > li span {
     padding: 0;
     margin: 0;
   }
+  .banner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .banner > .img {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .banner > .img img {
+    position: relative;
+    width: 50%;
+    object-fit: cover;
+  }
+  .banner > .img img:first-of-type {
+    z-index: -10;
+  }
+  .banner > .img img:last-of-type {
+    z-index: -9;
+  }
+  .banner > .titels {
+    text-align: center;
+    width: 50%;
+  }
+  .banner > .titels h1 {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .banner > .titels hr {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .banner > .titels h3 {
+    width: 100%;
+    font-size: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
