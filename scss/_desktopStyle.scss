@@ -2,63 +2,137 @@
 
 html{font-size: 18px;}
 
+@font-face {
+    font-family: "DyslexicFont";
+    src: url("../resources/fonts/OpenDyslexic/OpenDyslexic-Regular.otf");
+}
+
 body{
+    font-family: "DyslexicFont";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: color.get('dark');
+    overflow: hidden;
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
-    .banner{
+    > .img{
+        top: 0;
+        left: 0;
+        position: absolute;
         width: 100%;
-        height: 100%;
-        position: relative;
-        > .img{
-            top: 0;
-            left: 0;
+        img{
             position: absolute;
             width: 100%;
-            img{
-                position: relative;
-                width: 100%;
-                object-fit: cover;
-            }
-            img:first-of-type{
-                z-index: -10;
-            }
-            img:last-of-type{
-                z-index: -9;
-            }
+            height: 100vh;
+            object-fit: cover;
         }
+        img:first-of-type{
+            z-index: -10;
+        }
+        img:last-of-type{
+            z-index: -9;
+        }
+    }
+    .banner{
+        width: 40%;
+        height: 100%;
+        position: relative;
         > .titels{
             text-align: center;
-            width: 50%;
+            width: 100%;
+            margin: 1rem 0rem;
+            padding: 0;
             h1{
                 width: 100%;
-                font-size: 3rem;
+                font-size: 5rem;
+                margin: 0;
             }
             hr{
-                width: 75%;
+                width: 60%;
+                height: .3rem;
+                background-color: #000;
+                border-radius: .1rem;
+                border-style: none;
+                border-width: 0;
                 margin: 0 auto;
             }
             h3{
-                width: 100%;
-                font-size: 2rem;
+                margin: 0 auto;
+                width: 80%;
+                font-size: 3rem;
             }
         }
-        > nav{
-            width: 50%;
-            bottom: 0;
-            left: 0;
-            ul{
-                list-style: none;
-                display: flex;
-                flex-direction: row;
-                > li{
-                    background-color: white;
-                    border-radius: 2rem;
-                    span{
-                        font-size: 10rem !important;
-                    }
+    }
+    > aside{
+        width: 50%;
+        height: 90%;
+        margin: 1rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > p{
+            background-color: color.get("light");
+            box-shadow: .5rem .5rem 0 color.get("secondary");
+            font-size: 2rem;
+            border-radius: .7rem;
+            border-style: none;
+            border-width: 0rem;
+            margin: 1rem 0;
+            padding: .5rem;
+            width: calc(100% - 1rem);
+        }
+        > button{
+            background-color: #d9d9d9;
+            box-shadow: .5rem .5rem 0 color.get("secondary");
+            font-family: "DyslexicFont";
+            border-radius: .7rem;
+            border-style: none;
+            border-width: 0rem;
+            margin: 1rem 0;
+            width: 100%;
+            height: 6rem;
+            font-size: 4.8rem;
+            line-height: 1em;
+            transition: background-color .2s, box-shadow .2s, color .2s;
+            
+            &:hover{
+                background-color: #d9d9d9;
+                box-shadow: .65rem .65rem 0 color.get("secondary");
+                color: rgb(62, 62, 62);
+            }
+        }
+    }
+    > nav{
+        position: absolute;
+        z-index: 10;
+        width: 50%;
+        bottom: 1rem;
+        left: 0;
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            > li{
+                margin: 0 .5rem;
+                background-color: #d9d9d9   ;
+                border-radius: 1rem;
+                box-shadow: .5rem .5rem 0 color.get("primary");
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                span{
+                    font-size: 10rem !important;
+                }
+            }
+            > li:hover{
+                background-color: #d9d9d9;
+                box-shadow: .65rem .65rem 0 color.get("secondary");
+                a{
+                    color: rgb(62, 62, 62);
                 }
             }
         }
