@@ -1,5 +1,5 @@
 html {
-  font-size: 18px;
+  font-size: calc(0.6vw + 0.6vh);
 }
 
 @font-face {
@@ -74,7 +74,7 @@ body > aside {
   flex-direction: column;
   align-items: center;
 }
-body > aside > p {
+body > aside > p, body > aside > form {
   background-color: #d9d9d9;
   box-shadow: 0.5rem 0.5rem 0 #56696d;
   font-size: 2rem;
@@ -84,6 +84,15 @@ body > aside > p {
   margin: 1rem 0;
   padding: 0.5rem;
   width: calc(100% - 1rem);
+}
+body > aside > form {
+  display: flex;
+  flex-direction: column;
+}
+body > aside > form > h5 {
+  margin: 0;
+  text-align: center;
+  width: 100%;
 }
 body > aside > button {
   background-color: #d9d9d9;
@@ -97,6 +106,7 @@ body > aside > button {
   height: 6rem;
   font-size: 4.8rem;
   line-height: 1em;
+  transition: background-color 0.2s, box-shadow 0.2s, color 0.2s;
 }
 body > aside > button:hover {
   background-color: #d9d9d9;
@@ -120,10 +130,12 @@ body > nav ul > li {
   background-color: #d9d9d9;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 0 #678085;
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 body > nav ul > li a {
   text-decoration: none;
   color: black;
+  transition: color 0.2s;
 }
 body > nav ul > li span {
   font-size: 10rem !important;

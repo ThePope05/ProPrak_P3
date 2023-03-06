@@ -1,6 +1,6 @@
 @use "color";
 
-html{font-size: 18px;}
+html{font-size: calc(.6vw + .6vh);}
 
 @font-face {
     font-family: "DyslexicFont";
@@ -73,7 +73,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        > p{
+        > p, > form{
             background-color: color.get("light");
             box-shadow: .5rem .5rem 0 color.get("secondary");
             font-size: 2rem;
@@ -83,6 +83,15 @@ body{
             margin: 1rem 0;
             padding: .5rem;
             width: calc(100% - 1rem);
+        }
+        > form{
+            display: flex;
+            flex-direction: column;
+            > h5{
+                margin: 0;
+                text-align: center;
+                width: 100%;
+            }
         }
         > button{
             background-color: #d9d9d9;
@@ -120,9 +129,11 @@ body{
                 background-color: #d9d9d9   ;
                 border-radius: 1rem;
                 box-shadow: .5rem .5rem 0 color.get("primary");
+                transition: background-color .2s, box-shadow .2s;
                 a{
                     text-decoration: none;
                     color: black;
+                    transition: color .2s;
                 }
                 span{
                     font-size: 10rem !important;
