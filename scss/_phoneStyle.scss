@@ -83,7 +83,7 @@ body{
         form {
           background-color: color.get('light');
           box-shadow: 0.5rem 0.5rem 0 color.get('secondary');
-          font-size: 2.3rem;
+          font-size: 2rem;
           border-radius: 0.7rem;
           border-style: none;
           border-width: 0rem;
@@ -92,6 +92,18 @@ body{
           width: 100%;
           text-align: center;
         }
+        .sub {
+            background-color: grey;
+            box-shadow: 0.5rem 0.5rem 0 color.get('secondary');
+            font-size: 2rem;
+            border-radius: 0.7rem;
+            border-style: none;
+            border-width: 0rem;
+            margin: 2rem 0;
+            padding: 0.5rem;
+            width: 150%;
+            text-align: center;
+          }
         > form{
             display: flex;
             flex-direction: column;
