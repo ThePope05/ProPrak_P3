@@ -9,6 +9,14 @@
     <title>Home pagina</title>
 </head>
 <body>
+    <?php
+    $ans =  intval($_GET['ans1']) + 
+            intval($_GET['ans2']) +
+            intval($_GET['ans3']) +
+            intval($_GET['ans4']) +
+            intval($_GET['ans5']);
+
+    ?>
     <div class="img">
         <img src="./resources/images/Letters.jpg">
         <img src="./resources/images/DislexiBG.png">
@@ -17,19 +25,19 @@
         <div class="titels">
             <h1>Dislexi</h1>
             <hr>
-            <h3>Alles dat je moet weten over dyslexie</h3>
+            <h3>Test jezelf op dyslexie</h3>
         </div>
     </div>
     <aside>
+        <div>
+            <h1>Jouw uitkomst</h1>
+            <h3>Punten: <?php echo $ans ?></h3>
+        </div>
         <p>
-            Op onze website lees je alles dat je moet weten over dyslexie, <br>
-            je kan bij ons ook een quiz maken om een idee te krijgen of je mischien dyslexie hebt.
-            Je kan naar de quiz door op de test jezelf knop te klikken.
-            Om meer over dyslexie te leren kan je op de meer weten knop klikken.
-            Hopelijk maken wij je wat wijzer.
+            5 - 8 punten is waarschijnlijk geen dyslexie <br>
+            9 - 12 punten is mischien wel dyslexie laat je profesioneel testen <br>
+            13 - 15 punten is waarschijnlijk wel dyslexie laat je profesioneel testen
         </p>
-        <button onclick="window.location.href='quiz.html'">Test je zelf</button>
-        <button onclick="window.location.href='information.html';">Meer weten</button>
     </aside>
     <nav>
         <ul>

@@ -21,16 +21,53 @@
         </div>
     </div>
     <aside>
-        <form action="">
-            
+        <form action="quizOutcome.php" method="get">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Geen moeite</th>
+                    <th>Beetje moeite</th>
+                    <th>Veel moeite</th>
+                </tr>
+                <tr>
+                    <td>Moeite met lezen</td>
+                    <td><input type="radio" name="ans1" value="1"></td>
+                    <td><input type="radio" name="ans1" value="2"></td>
+                    <td><input type="radio" name="ans1" value="3"></td>
+                </tr>
+                <tr>
+                    <td>Moeite met woorden spellen</td>
+                    <td><input type="radio" name="ans2" value="1"></td>
+                    <td><input type="radio" name="ans2" value="2"></td>
+                    <td><input type="radio" name="ans2" value="3"></td>
+                </tr>
+                <tr>
+                    <td>Moeite met zin opbouw</td>
+                    <td><input type="radio" name="ans3" value="1"></td>
+                    <td><input type="radio" name="ans3" value="2"></td>
+                    <td><input type="radio" name="ans3" value="3"></td>
+                </tr>
+                <tr>
+                    <td>Moeite met concentreren</td>
+                    <td><input type="radio" name="ans4" value="1"></td>
+                    <td><input type="radio" name="ans4" value="2"></td>
+                    <td><input type="radio" name="ans4" value="3"></td>
+                </tr>
+                <tr>
+                    <td>Moeite met luisteren</td>
+                    <td><input type="radio" name="ans5" value="1"></td>
+                    <td><input type="radio" name="ans5" value="2"></td>
+                    <td><input type="radio" name="ans5" value="3"></td>
+                </tr>
+            </table>
+            <button type="submit">Submit</button>
         </form>
     </aside>
     <nav>
         <ul>
-            <li><a href=""><span class="material-symbols-outlined">menu</span></a></li>
-            <li><a href=""><span class="material-symbols-outlined">home</span></a></li>
+            <li><a href="index.html"><span class="material-symbols-outlined">home</span></a></li>
             <li><a href="information.html"><span class="material-symbols-outlined">info</span></a></li>
-            <li><a href=""><span class="material-symbols-outlined">question_mark</span></a></li>
+            <li><a href="quiz.html"><span class="material-symbols-outlined">question_mark</span></a></li>
         </ul>
     </nav>
 </body>

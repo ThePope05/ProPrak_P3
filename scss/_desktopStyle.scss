@@ -76,7 +76,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        > p, > form{
+        > p, > form, > div{
             background-color: color.get("light");
             box-shadow: .5rem .5rem 0 color.get("secondary");
             font-size: 2rem;
@@ -95,8 +95,18 @@ body{
                 text-align: center;
                 width: 100%;
             }
+            > button{
+                width: 50%;
+                margin: 1rem auto;
+                font-size: 3rem;
+                height: 4rem;
+                background-color: #c9c9c9;
+                &:hover{
+                    background-color: #c9c9c9;
+                }
+            }
         }
-        > button{
+        button{
             background-color: #d9d9d9;
             box-shadow: .5rem .5rem 0 color.get("secondary");
             font-family: "DyslexicFont";
@@ -108,45 +118,63 @@ body{
             height: 6rem;
             font-size: 4.8rem;
             line-height: 1em;
-            transition: background-color .2s, box-shadow .2s, color .2s;
+            transition: background-color .6s, box-shadow .8s, height .5s ease, color .6s;
             
             &:hover{
+                height: 7rem;
                 background-color: #d9d9d9;
-                box-shadow: .65rem .65rem 0 color.get("secondary");
+                box-shadow: 1rem 1rem 0 color.get("secondary");
                 color: rgb(62, 62, 62);
+            }
+        }
+        table{
+            border-collapse: collapse;
+            tr{
+                td, th {
+                    border: 2px black solid;
+                    > input{
+                    width: 100%;
+                    height: 100%;
+                    }
+                }
             }
         }
     }
     > nav{
         position: absolute;
         z-index: 10;
-        width: 50%;
+        width: 40%;
         bottom: 1rem;
         left: 0;
-        ul{
+        > ul{
             list-style: none;
             display: flex;
             flex-direction: row;
+            justify-content: space-evenly;
             > li{
+                width: 33%;
                 margin: 0 .5rem;
+                display: flex;
+                justify-content: center;
                 background-color: #d9d9d9   ;
                 border-radius: 1rem;
                 box-shadow: .5rem .5rem 0 color.get("primary");
-                transition: background-color .2s, box-shadow .2s;
+                transition: background-color .6s, box-shadow .8s, width .5s ease;
                 a{
                     text-decoration: none;
                     color: black;
-                    transition: color .2s;
+                    transition: color .6s;
                 }
                 span{
                     font-size: 10rem !important;
                 }
-            }
-            > li:hover{
-                background-color: #d9d9d9;
-                box-shadow: .65rem .65rem 0 color.get("secondary");
-                a{
-                    color: rgb(62, 62, 62);
+                &:hover{
+                    width: 45%;
+                    background-color: #d9d9d9;
+                    box-shadow: 1rem 1rem 0 color.get("secondary");
+                    a{
+                        color: rgb(62, 62, 62);
+                    }
                 }
             }
         }

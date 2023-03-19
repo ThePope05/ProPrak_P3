@@ -74,7 +74,7 @@
     flex-direction: column;
     align-items: center;
   }
-  body > aside > p, body > aside > form {
+  body > aside > p, body > aside > form, body > aside > div {
     background-color: #d9d9d9;
     box-shadow: 0.5rem 0.5rem 0 #56696d;
     font-size: 2rem;
@@ -94,7 +94,17 @@
     text-align: center;
     width: 100%;
   }
-  body > aside > button {
+  body > aside > form > button {
+    width: 50%;
+    margin: 1rem auto;
+    font-size: 3rem;
+    height: 4rem;
+    background-color: #c9c9c9;
+  }
+  body > aside > form > button:hover {
+    background-color: #c9c9c9;
+  }
+  body > aside button {
     background-color: #d9d9d9;
     box-shadow: 0.5rem 0.5rem 0 #56696d;
     font-family: "DyslexicFont";
@@ -106,45 +116,61 @@
     height: 6rem;
     font-size: 4.8rem;
     line-height: 1em;
-    transition: background-color 0.2s, box-shadow 0.2s, color 0.2s;
+    transition: background-color 0.6s, box-shadow 0.8s, height 0.5s ease, color 0.6s;
   }
-  body > aside > button:hover {
+  body > aside button:hover {
+    height: 7rem;
     background-color: #d9d9d9;
-    box-shadow: 0.65rem 0.65rem 0 #56696d;
+    box-shadow: 1rem 1rem 0 #56696d;
     color: rgb(62, 62, 62);
+  }
+  body > aside table {
+    border-collapse: collapse;
+  }
+  body > aside table tr td, body > aside table tr th {
+    border: 2px black solid;
+  }
+  body > aside table tr td > input, body > aside table tr th > input {
+    width: 100%;
+    height: 100%;
   }
   body > nav {
     position: absolute;
     z-index: 10;
-    width: 50%;
+    width: 40%;
     bottom: 1rem;
     left: 0;
   }
-  body > nav ul {
+  body > nav > ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
   }
-  body > nav ul > li {
+  body > nav > ul > li {
+    width: 33%;
     margin: 0 0.5rem;
+    display: flex;
+    justify-content: center;
     background-color: #d9d9d9;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 0 #678085;
-    transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.6s, box-shadow 0.8s, width 0.5s ease;
   }
-  body > nav ul > li a {
+  body > nav > ul > li a {
     text-decoration: none;
     color: black;
-    transition: color 0.2s;
+    transition: color 0.6s;
   }
-  body > nav ul > li span {
+  body > nav > ul > li span {
     font-size: 10rem !important;
   }
-  body > nav ul > li:hover {
+  body > nav > ul > li:hover {
+    width: 45%;
     background-color: #d9d9d9;
-    box-shadow: 0.65rem 0.65rem 0 #56696d;
+    box-shadow: 1rem 1rem 0 #56696d;
   }
-  body > nav ul > li:hover a {
+  body > nav > ul > li:hover a {
     color: rgb(62, 62, 62);
   }
 }
